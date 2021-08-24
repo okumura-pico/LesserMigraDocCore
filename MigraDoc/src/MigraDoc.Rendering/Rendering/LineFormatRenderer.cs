@@ -29,7 +29,7 @@
 #endregion
 
 using MigraDoc.DocumentObjectModel;
-using PdfSharp.Drawing;
+using PdfSharpCore.Drawing;
 using MigraDoc.DocumentObjectModel.Shapes;
 
 namespace MigraDoc.Rendering
@@ -66,10 +66,10 @@ namespace MigraDoc.Rendering
             if (!_lineFormat._visible.IsNull && !_lineFormat.Visible)
                 return 0;
 
-            if (!_lineFormat._width.IsNull)
+            if (!_lineFormat.Width.IsNull)
                 return _lineFormat.Width.Point;
 
-            if (!_lineFormat._color.IsNull || !_lineFormat._style.IsNull || _lineFormat.Visible)
+            if (!_lineFormat.Color.IsNull || !_lineFormat._style.IsNull || _lineFormat.Visible)
                 return 1;
 
             return 0;

@@ -31,7 +31,7 @@
 using System;
 using System.IO;
 using System.Diagnostics;
-using PdfSharp.Drawing;
+using PdfSharpCore.Drawing;
 using MigraDoc.DocumentObjectModel.Shapes;
 using MigraDoc.Rendering.Resources;
 
@@ -181,8 +181,8 @@ namespace MigraDoc.Rendering
                     {
                         XUnit usrWidth = _image.Width.Point;
                         XUnit usrHeight = _image.Height.Point;
-                        bool usrWidthSet = !_image._width.IsNull;
-                        bool usrHeightSet = !_image._height.IsNull;
+                        bool usrWidthSet = !_image.Width.IsNull;
+                        bool usrHeightSet = !_image.Height.IsNull;
 
                         XUnit resultWidth = usrWidth;
                         XUnit resultHeight = usrHeight;
@@ -322,12 +322,12 @@ namespace MigraDoc.Rendering
             }
             if (formatInfo.Failure != ImageFailure.None)
             {
-                if (!_image._width.IsNull)
+                if (!_image.Width.IsNull)
                     formatInfo.Width = _image.Width.Point;
                 else
                     formatInfo.Width = XUnit.FromCentimeter(2.5);
 
-                if (!_image._height.IsNull)
+                if (!_image.Height.IsNull)
                     formatInfo.Height = _image.Height.Point;
                 else
                     formatInfo.Height = XUnit.FromCentimeter(2.5);
@@ -352,7 +352,7 @@ namespace MigraDoc.Rendering
 #else
                 using (Stream stream = new MemoryStream(bytes))
                 {
-                    XImage image = XImage.FromStream(stream);
+                    XImage image = XImage.FromStream(()=> stream);
                     return image;
                 }
 #endif

@@ -33,7 +33,7 @@
 using System;
 using System.Collections.Generic;
 using MigraDoc.DocumentObjectModel.Internals;
-using PdfSharp.Drawing;
+using PdfSharpCore.Drawing;
 using MigraDoc.DocumentObjectModel;
 using MigraDoc.DocumentObjectModel.Fields;
 using MigraDoc.DocumentObjectModel.Visitors;
@@ -483,7 +483,7 @@ namespace MigraDoc.Rendering
             }
             layoutInfo.MinWidth = layoutInfo.ContentArea.Width;
 
-            if (!_table.Rows._leftIndent.IsNull)
+            if (!_table.Rows.LeftIndent.IsNull)
                 layoutInfo.Left = _table.Rows.LeftIndent.Point;
 
             else if (_table.Rows.Alignment == RowAlignment.Left)

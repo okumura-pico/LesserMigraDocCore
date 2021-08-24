@@ -29,10 +29,11 @@
 #endregion
 
 using MigraDoc.DocumentObjectModel;
-using PdfSharp.Drawing;
+using PdfSharpCore.Drawing;
 using MigraDoc.DocumentObjectModel.Tables;
 using MigraDoc.DocumentObjectModel.Shapes;
 using MigraDoc.DocumentObjectModel.Shapes.Charts;
+using System;
 
 namespace MigraDoc.Rendering
 {
@@ -158,7 +159,8 @@ namespace MigraDoc.Rendering
             else if (documentObject is TextFrame)
                 renderer = new TextFrameRenderer(gfx, (TextFrame)documentObject, fieldInfos);
             else if (documentObject is Chart)
-                renderer = new ChartRenderer(gfx, (Chart)documentObject, fieldInfos);
+                throw new NotImplementedException();
+                // renderer = new ChartRenderer(gfx, (Chart)documentObject, fieldInfos);
             else if (documentObject is Image)
                 renderer = new ImageRenderer(gfx, (Image)documentObject, fieldInfos);
 
@@ -189,7 +191,8 @@ namespace MigraDoc.Rendering
             else if (renderInfo.DocumentObject is TextFrame)
                 renderer = new TextFrameRenderer(gfx, renderInfo, fieldInfos);
             else if (renderInfo.DocumentObject is Chart)
-                renderer = new ChartRenderer(gfx, renderInfo, fieldInfos);
+                throw new NotImplementedException();
+                // renderer = new ChartRenderer(gfx, renderInfo, fieldInfos);
             //else if (renderInfo.DocumentObject is Chart)
             //  renderer = new ChartRenderer(gfx, renderInfo, fieldInfos);
             else if (renderInfo.DocumentObject is Image)

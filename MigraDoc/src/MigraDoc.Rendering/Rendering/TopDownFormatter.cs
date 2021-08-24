@@ -31,7 +31,7 @@
 using System;
 using System.Collections.Generic;
 using MigraDoc.DocumentObjectModel;
-using PdfSharp.Drawing;
+using PdfSharpCore.Drawing;
 
 namespace MigraDoc.Rendering
 {

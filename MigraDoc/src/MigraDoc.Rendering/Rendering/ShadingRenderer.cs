@@ -29,7 +29,7 @@
 #endregion
 
 using MigraDoc.DocumentObjectModel.Tables;
-using PdfSharp.Drawing;
+using PdfSharpCore.Drawing;
 using MigraDoc.DocumentObjectModel;
 
 namespace MigraDoc.Rendering
@@ -97,7 +97,7 @@ namespace MigraDoc.Rendering
             if (!_shading._visible.IsNull)
                 return _shading.Visible;
             else
-                return !_shading._color.IsNull;
+                return !_shading.Color.IsNull;
         }
 
         private void RealizeBrush()

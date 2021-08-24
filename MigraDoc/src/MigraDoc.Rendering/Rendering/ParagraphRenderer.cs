@@ -33,12 +33,12 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Text;
 using MigraDoc.DocumentObjectModel;
-using PdfSharp.Pdf;
-using PdfSharp.Drawing;
+using PdfSharpCore.Pdf;
+using PdfSharpCore.Drawing;
 using MigraDoc.DocumentObjectModel.Fields;
 using MigraDoc.DocumentObjectModel.Shapes;
 using MigraDoc.Rendering.Resources;
-using PdfSharp.Pdf.Advanced;
+using PdfSharpCore.Pdf.Advanced;
 
 namespace MigraDoc.Rendering
 {

@@ -32,7 +32,7 @@ using System;
 using System.Collections.Generic;
 using MigraDoc.DocumentObjectModel;
 using MigraDoc.DocumentObjectModel.Shapes.Charts;
-using PdfSharp.Drawing;
+using PdfSharpCore.Drawing;
 
 namespace MigraDoc.Rendering
 {
@@ -77,7 +77,7 @@ namespace MigraDoc.Rendering
         {
             get
             {
-                if (TextArea._height.IsNull)
+                if (TextArea.Height.IsNull)
                     return ContentHeight + TextArea.TopPadding + TextArea.BottomPadding;
                 return TextArea.Height.Point;
             }

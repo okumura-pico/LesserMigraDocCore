@@ -33,8 +33,8 @@ using System.Reflection;
 using System.IO;
 using MigraDoc.DocumentObjectModel;
 using MigraDoc.Rendering.Resources;
-using PdfSharp.Pdf;
-using PdfSharp.Drawing;
+using PdfSharpCore.Pdf;
+using PdfSharpCore.Drawing;
 
 namespace MigraDoc.Rendering
 {

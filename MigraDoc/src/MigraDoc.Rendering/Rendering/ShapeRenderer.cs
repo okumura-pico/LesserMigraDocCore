@@ -29,7 +29,7 @@
 #endregion
 
 using System;
-using PdfSharp.Drawing;
+using PdfSharpCore.Drawing;
 using MigraDoc.DocumentObjectModel.Shapes;
 using MigraDoc.DocumentObjectModel.Internals;
 

@@ -28,7 +28,7 @@
 // DEALINGS IN THE SOFTWARE.
 #endregion
 
-using PdfSharp.Drawing;
+using PdfSharpCore.Drawing;
 using MigraDoc.DocumentObjectModel.Shapes;
 
 namespace MigraDoc.Rendering
@@ -58,7 +58,7 @@ namespace MigraDoc.Rendering
         {
             if (!_fillFormat._visible.IsNull)
                 return _fillFormat.Visible;
-            return !_fillFormat._color.IsNull;
+            return !_fillFormat.Color.IsNull;
         }
 
         private XBrush GetBrush()
