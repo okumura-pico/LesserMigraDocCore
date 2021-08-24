@@ -1,0 +1,46 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30114.105
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MigraDoc", "MigraDoc", "{581DEA70-670A-496F-A816-C3F560B2FA43}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{DA633A6E-EDD3-4022-918D-A6103A74085A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MigraDoc.DocumentObjectModel", "MigraDoc\src\MigraDoc.DocumentObjectModel\MigraDoc.DocumentObjectModel.csproj", "{9EE26470-C01D-4F37-BCCA-B891AE776016}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MigraDoc.Rendering", "MigraDoc\src\MigraDoc.Rendering\MigraDoc.Rendering.csproj", "{F968426C-C6D6-4639-9F94-89AD2AEE908B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PdfSharpCore", "PdfSharpCore", "{9DEA6D6A-09AF-4DF0-AC87-4927476825CD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PdfSharpCore", "PdfSharpCore\PdfSharpCore\PdfSharpCore.csproj", "{BB153628-7BF6-4B00-ABC0-BCE35B939924}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9EE26470-C01D-4F37-BCCA-B891AE776016}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9EE26470-C01D-4F37-BCCA-B891AE776016}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9EE26470-C01D-4F37-BCCA-B891AE776016}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9EE26470-C01D-4F37-BCCA-B891AE776016}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F968426C-C6D6-4639-9F94-89AD2AEE908B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F968426C-C6D6-4639-9F94-89AD2AEE908B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F968426C-C6D6-4639-9F94-89AD2AEE908B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F968426C-C6D6-4639-9F94-89AD2AEE908B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BB153628-7BF6-4B00-ABC0-BCE35B939924}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BB153628-7BF6-4B00-ABC0-BCE35B939924}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BB153628-7BF6-4B00-ABC0-BCE35B939924}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BB153628-7BF6-4B00-ABC0-BCE35B939924}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{DA633A6E-EDD3-4022-918D-A6103A74085A} = {581DEA70-670A-496F-A816-C3F560B2FA43}
+		{9EE26470-C01D-4F37-BCCA-B891AE776016} = {DA633A6E-EDD3-4022-918D-A6103A74085A}
+		{F968426C-C6D6-4639-9F94-89AD2AEE908B} = {DA633A6E-EDD3-4022-918D-A6103A74085A}
+		{BB153628-7BF6-4B00-ABC0-BCE35B939924} = {9DEA6D6A-09AF-4DF0-AC87-4927476825CD}
+	EndGlobalSection
+EndGlobal
