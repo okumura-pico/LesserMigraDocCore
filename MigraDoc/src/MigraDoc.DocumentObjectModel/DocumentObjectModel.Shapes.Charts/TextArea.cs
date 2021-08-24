@@ -184,7 +184,7 @@ namespace MigraDoc.DocumentObjectModel.Shapes.Charts
             set { _width = value; }
         }
         [DV]
-        internal Unit _width = Unit.NullValue;
+        public Unit _width = Unit.NullValue;
 
         /// <summary>
         /// Gets or sets the default style name of the area.

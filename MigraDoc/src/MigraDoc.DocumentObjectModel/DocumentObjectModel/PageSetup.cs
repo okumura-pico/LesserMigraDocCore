@@ -173,7 +173,7 @@ namespace MigraDoc.DocumentObjectModel
         /// <summary>
         /// Gets the effective page width, depending on the Orientation this will either be the height or the width.
         /// </summary>
-        internal Unit EffectivePageWidth
+        public Unit EffectivePageWidth
         {
             get { return IsLandscape ? PageHeight : PageWidth; }
         }
@@ -187,7 +187,7 @@ namespace MigraDoc.DocumentObjectModel
             set { _startingNumber.Value = value; }
         }
         [DV]
-        internal NInt _startingNumber = NInt.NullValue;
+        public NInt _startingNumber = NInt.NullValue;
 
         /// <summary>
         /// Gets or sets the page height. If Orientation is set to Landscape, the PageHeight specifies the width of the page.
@@ -203,7 +203,7 @@ namespace MigraDoc.DocumentObjectModel
         /// <summary>
         /// Gets the effective page height, depending on the Orientation this will either be the height or the width.
         /// </summary>
-        internal Unit EffectivePageHeight
+        public Unit EffectivePageHeight
         {
             get { return IsLandscape ? PageWidth : PageHeight; }
         }

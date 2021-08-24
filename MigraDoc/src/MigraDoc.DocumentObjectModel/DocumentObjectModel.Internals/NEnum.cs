@@ -37,7 +37,7 @@ namespace MigraDoc.DocumentObjectModel.Internals
     /// <summary>
     /// Represents a nullable Enum value.
     /// </summary>
-    internal struct NEnum : INullableValue
+    public struct NEnum : INullableValue
     {
         public NEnum(int val, Type type)
         {
@@ -64,8 +64,8 @@ namespace MigraDoc.DocumentObjectModel.Internals
             set
             {
                 // TODO Remove German remarks!
-                //TODO: Klasse Character so ändern, dass symbolName und char in unterschiedlichen Feldern gespeichert werden.
-                //Diese Spezialbehandlung entfällt dann.
+                //TODO: Klasse Character so ï¿½ndern, dass symbolName und char in unterschiedlichen Feldern gespeichert werden.
+                //Diese Spezialbehandlung entfï¿½llt dann.
                 if (_type == typeof(SymbolName))
                 {
                     //          if (Enum.IsDefined(this .type, (uint)value))

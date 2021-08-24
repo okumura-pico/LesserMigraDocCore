@@ -177,7 +177,7 @@ namespace MigraDoc.DocumentObjectModel
             }
         }
         [DV]
-        internal Borders _borders;
+        public Borders _borders;
 
         /// <summary>
         /// Gets or sets the indent of the first line in the paragraph.
@@ -188,7 +188,7 @@ namespace MigraDoc.DocumentObjectModel
             set { _firstLineIndent = value; }
         }
         [DV]
-        internal Unit _firstLineIndent = Unit.NullValue;
+        public Unit _firstLineIndent = Unit.NullValue;
 
         /// <summary>
         /// Gets or sets the Font object.
@@ -273,7 +273,7 @@ namespace MigraDoc.DocumentObjectModel
             }
         }
         [DV]
-        internal ListInfo _listInfo;
+        public ListInfo _listInfo;
 
         /// <summary>
         /// Gets or sets the out line level of the paragraph.
@@ -321,7 +321,7 @@ namespace MigraDoc.DocumentObjectModel
             }
         }
         [DV]
-        internal Shading _shading;
+        public Shading _shading;
 
         /// <summary>
         /// Gets or sets the space that's inserted after the paragraph.

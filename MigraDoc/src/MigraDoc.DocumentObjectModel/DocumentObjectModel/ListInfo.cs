@@ -81,7 +81,7 @@ namespace MigraDoc.DocumentObjectModel
             set { _numberPosition = value; }
         }
         [DV]
-        internal Unit _numberPosition = Unit.NullValue;
+        public Unit _numberPosition = Unit.NullValue;
 
         /// <summary>
         /// Gets or sets a value indicating whether
@@ -93,7 +93,7 @@ namespace MigraDoc.DocumentObjectModel
             set { _continuePreviousList.Value = value; }
         }
         [DV]
-        internal NBool _continuePreviousList = NBool.NullValue;
+        public NBool _continuePreviousList = NBool.NullValue;
         #endregion
 
         #region Internal

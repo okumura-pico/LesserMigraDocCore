@@ -189,7 +189,7 @@ namespace MigraDoc.DocumentObjectModel
         /// <summary>
         /// Determines whether this instance is null (not set).
         /// </summary>
-        internal bool IsNull
+        public bool IsNull
         {
             get { return this == Empty; }
         }

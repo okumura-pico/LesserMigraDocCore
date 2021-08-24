@@ -66,7 +66,7 @@ namespace MigraDoc.DocumentObjectModel
             return GetBorderReadOnly(type) != null;
         }
 
-        internal Border GetBorderReadOnly(BorderType type)
+        public Border GetBorderReadOnly(BorderType type)
         {
             switch (type)
             {
@@ -179,7 +179,7 @@ namespace MigraDoc.DocumentObjectModel
             }
         }
         [DV]
-        internal Border _top;
+        public Border _top;
 
         /// <summary>
         /// Gets or sets the left border.
@@ -194,7 +194,7 @@ namespace MigraDoc.DocumentObjectModel
             }
         }
         [DV]
-        internal Border _left;
+        public Border _left;
 
         /// <summary>
         /// Gets or sets the bottom border.
@@ -209,7 +209,7 @@ namespace MigraDoc.DocumentObjectModel
             }
         }
         [DV]
-        internal Border _bottom;
+        public Border _bottom;
 
         /// <summary>
         /// Gets or sets the right border.
@@ -224,7 +224,7 @@ namespace MigraDoc.DocumentObjectModel
             }
         }
         [DV]
-        internal Border _right;
+        public Border _right;
 
         /// <summary>
         /// Gets or sets the diagonalup border.
@@ -239,7 +239,7 @@ namespace MigraDoc.DocumentObjectModel
             }
         }
         [DV]
-        internal Border _diagonalUp;
+        public Border _diagonalUp;
 
         /// <summary>
         /// Gets or sets the diagonaldown border.
@@ -254,7 +254,7 @@ namespace MigraDoc.DocumentObjectModel
             }
         }
         [DV]
-        internal Border _diagonalDown;
+        public Border _diagonalDown;
 
         /// <summary>
         /// Gets or sets a value indicating whether the borders are visible.
@@ -265,7 +265,7 @@ namespace MigraDoc.DocumentObjectModel
             set { _visible.Value = value; }
         }
         [DV]
-        internal NBool _visible = NBool.NullValue;
+        public NBool _visible = NBool.NullValue;
 
         /// <summary>
         /// Gets or sets the line style of the borders.
@@ -276,7 +276,7 @@ namespace MigraDoc.DocumentObjectModel
             set { _style.Value = (int)value; }
         }
         [DV(Type = typeof(BorderStyle))]
-        internal NEnum _style = NEnum.NullValue(typeof(BorderStyle));
+        public NEnum _style = NEnum.NullValue(typeof(BorderStyle));
 
         /// <summary>
         /// Gets or sets the standard width of the borders.
@@ -287,7 +287,7 @@ namespace MigraDoc.DocumentObjectModel
             set { _width = value; }
         }
         [DV]
-        internal Unit _width = Unit.NullValue;
+        public Unit _width = Unit.NullValue;
 
         /// <summary>
         /// Gets or sets the color of the borders.
@@ -298,7 +298,7 @@ namespace MigraDoc.DocumentObjectModel
             set { _color = value; }
         }
         [DV]
-        internal Color _color = Color.Empty;
+        public Color _color = Color.Empty;
 
         /// <summary>
         /// Gets or sets the distance between text and the top border.

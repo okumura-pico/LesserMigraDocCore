@@ -39,7 +39,7 @@ namespace MigraDoc.DocumentObjectModel.Visitors
     /// <summary>
     /// Summary description for VisitorBase.
     /// </summary>
-    internal abstract class VisitorBase : DocumentObjectVisitor
+    public abstract class VisitorBase : DocumentObjectVisitor
     {
         public override void Visit(DocumentObject documentObject)
         {

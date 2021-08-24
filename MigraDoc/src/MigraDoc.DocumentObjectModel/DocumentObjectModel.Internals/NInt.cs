@@ -35,7 +35,7 @@ namespace MigraDoc.DocumentObjectModel.Internals
     /// <summary>
     /// Represents a nullable integer value.
     /// </summary>
-    internal struct NInt : INullableValue
+    public struct NInt : INullableValue
     {
         public NInt(int val)
         {

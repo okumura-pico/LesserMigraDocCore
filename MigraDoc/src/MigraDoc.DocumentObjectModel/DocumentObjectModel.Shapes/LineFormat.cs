@@ -70,7 +70,7 @@ namespace MigraDoc.DocumentObjectModel.Shapes
             set { _visible.Value = value; }
         }
         [DV]
-        internal NBool _visible = NBool.NullValue;
+        public NBool _visible = NBool.NullValue;
 
         /// <summary>
         /// Gets or sets the width of the line in Unit.
@@ -114,7 +114,7 @@ namespace MigraDoc.DocumentObjectModel.Shapes
             set { _style.Value = (int)value; }
         }
         [DV(Type = typeof(LineStyle))]
-        internal NEnum _style = NEnum.NullValue(typeof(LineStyle));
+        public NEnum _style = NEnum.NullValue(typeof(LineStyle));
         #endregion
 
         #region Internal

@@ -37,7 +37,7 @@ namespace MigraDoc.DocumentObjectModel.Visitors
     /// <summary>
     /// Flattens a document for PDF rendering.
     /// </summary>
-    internal class PdfFlattenVisitor : VisitorBase
+    public class PdfFlattenVisitor : VisitorBase
     {
         /// <summary>
         /// Initializes a new instance of the PdfFlattenVisitor class.
@@ -156,14 +156,14 @@ namespace MigraDoc.DocumentObjectModel.Visitors
                                 }
                                 break;
 
-                            case '­': // soft hyphen.
+                            case 'ï¿½': // soft hyphen.
                                 if (currentString != "")
                                 {
                                     elements.InsertObject(idx + insertedObjects, new Text(currentString));
                                     ++insertedObjects;
                                     currentString = "";
                                 }
-                                elements.InsertObject(idx + insertedObjects, new Text("­"));
+                                elements.InsertObject(idx + insertedObjects, new Text("ï¿½"));
                                 ++insertedObjects;
                                 //currentString = "";
                                 break;

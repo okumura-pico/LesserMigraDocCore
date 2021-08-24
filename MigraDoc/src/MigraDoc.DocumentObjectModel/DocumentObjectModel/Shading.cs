@@ -79,7 +79,7 @@ namespace MigraDoc.DocumentObjectModel
             set { _visible.Value = value; }
         }
         [DV]
-        internal NBool _visible = NBool.NullValue;
+        public NBool _visible = NBool.NullValue;
 
         /// <summary>
         /// Gets or sets the shading color.

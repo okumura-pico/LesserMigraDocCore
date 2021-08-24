@@ -81,7 +81,7 @@ namespace MigraDoc.DocumentObjectModel
             set { _visible.Value = value; }
         }
         [DV]
-        internal NBool _visible = NBool.NullValue;
+        public NBool _visible = NBool.NullValue;
 
         /// <summary>
         /// Gets or sets the line style of the border.
@@ -92,7 +92,7 @@ namespace MigraDoc.DocumentObjectModel
             set { _style.Value = (int)value; }
         }
         [DV(Type = typeof(BorderStyle))]
-        internal NEnum _style = NEnum.NullValue(typeof(BorderStyle));
+        public NEnum _style = NEnum.NullValue(typeof(BorderStyle));
 
         /// <summary>
         /// Gets or sets the line width of the border.
@@ -103,7 +103,7 @@ namespace MigraDoc.DocumentObjectModel
             set { _width = value; }
         }
         [DV]
-        internal Unit _width = Unit.NullValue;
+        public Unit _width = Unit.NullValue;
 
         /// <summary>
         /// Gets or sets the color of the border.
@@ -114,7 +114,7 @@ namespace MigraDoc.DocumentObjectModel
             set { _color = value; }
         }
         [DV]
-        internal Color _color = Color.Empty;
+        public Color _color = Color.Empty;
 
         /// <summary>
         /// Gets the name of this border ("top", "bottom"....).

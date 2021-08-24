@@ -81,7 +81,7 @@ namespace MigraDoc.DocumentObjectModel.Shapes
             set { _visible.Value = value; }
         }
         [DV]
-        internal NBool _visible = NBool.NullValue;
+        public NBool _visible = NBool.NullValue;
         #endregion
 
         #region Internal

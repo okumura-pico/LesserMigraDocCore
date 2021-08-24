@@ -35,7 +35,7 @@ namespace MigraDoc.DocumentObjectModel.Internals
     /// <summary>
     /// Represents a nullable boolean value.
     /// </summary>
-    internal struct NBool : INullableValue
+    public struct NBool : INullableValue
     {
         public NBool(bool value)
         {

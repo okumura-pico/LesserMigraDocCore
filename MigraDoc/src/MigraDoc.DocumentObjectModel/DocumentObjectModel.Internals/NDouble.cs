@@ -35,7 +35,7 @@ namespace MigraDoc.DocumentObjectModel.Internals
     /// <summary>
     /// Represents a nullable double value.
     /// </summary>
-    internal struct NDouble : INullableValue
+    public struct NDouble : INullableValue
     {
         public NDouble(double value)
         {
